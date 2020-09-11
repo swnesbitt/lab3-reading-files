@@ -28,4 +28,4 @@ Using the data contained within the file `Aug2020_Champaign_Temperature_Dewpoint
 date = '2020-08-01'
 ```
 
-[![Run on Repl.it](https://repl.it/badge/github/ATMS-207-Fall-2020/lab2-python-practice)](https://repl.it/github/ATMS-207-Fall-2020/lab2-python-practice)
+[![Run on Repl.it](https://repl.it/badge/github/swnesbitt/lab3-reading-files)](https://repl.it/github/swnesbitt/lab3-reading-files)
