@@ -1,36 +1,31 @@
 # python-practice
 
-This is Lab 2 for ATMS 207.
+This is Lab 3 for ATMS 207.
 
 Your problems for this week (to be submitted to `github`):
 
 *Problem 1*
 
-Make a python program that prints the following information about yourself:
+Using the example code from the lecture
 
-Name: Sara Sprenkle  
-Favorite food: pizza  
-Favorite color: purple  
-Favorite hobby: hiking  
+```python
+filename='aravg.ann.land_ocean.90S.90N.v5.0.0.202007.asc'
+wxdata={'year':[],'temperature':[]}    #define dictionary
+with open(filename, "r") as f:    #read all the lines in the file
+    alist = f.read().splitlines()
+for line in alist:  #iterate through lines
+    wxdata['year'].append(int(line.split()[0]))
+    wxdata['temperature'].append(float(line.split()[1]))
+```
 
-Record the output in comments at the end of the file.
+Add code that will print a table of the top 10 warmest years in the first column and their temperature anomalies to the screen.
 
 *Problem 2*
 
-(a) Create three variables (`i`, `j`, and `result`) to calculate and display result = i$^2$ + 3j - 5 for the case where `i`=7 and `j`=2. Your code will not look exactly like this formula. Display the result and verify that it is correct. Consider if you were the user of the program and make the program display appropriate output. Put the answer/output in a comment.
+Using the data contained within the file `Aug2020_Champaign_Temperature_Dewpoint.csv`, write a python program to display the data for a given day on the screen.  The day can be specified within the program, for example
 
-(b) Change the name of the variable `i` to `i21`. Be sure to change the name everywhere the variable is used. Execute it to show it works.
-
-(c) Now edit the Python script again and change the variable name to `21i`. What error message do you get? Record in comments the error message.
-
-(d) Revert your program back to a correct variable name.
-
-*Problem 3*
-
-Write a python program that converts degrees Fahrenheit to degrees Celsius, and prints the converted value to the screen.  Define a value in Farenheit in a variable called `degF`, then do the conversion using that variable on a separate line, and print out the result to the screen on yet a separate line.
-
-Record your answer in comments in the file.
-
-When you are done, commit your changes to github with your code and results from your code in the comments, and submit the URL to your github repository on Learn@Illinois.
+```python
+date = '2020-08-01'
+```
 
 [![Run on Repl.it](https://repl.it/badge/github/ATMS-207-Fall-2020/lab2-python-practice)](https://repl.it/github/ATMS-207-Fall-2020/lab2-python-practice)
