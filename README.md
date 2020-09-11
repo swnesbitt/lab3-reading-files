@@ -1,4 +1,4 @@
-# python-practice
+# reading files
 
 This is Lab 3 for ATMS 207.
 
